@@ -293,7 +293,7 @@ if __name__ == "__main__":
     import browser
     from selenium import webdriver
     from webdriver_manager.chrome import ChromeDriverManager
-    url = 'https://www.zomato.com/bangalore/meghana-foods-residency-road/order'
+    url = 'https://www.zomato.com/bangalore/india-bistro-2-indiranagar-bangalore/order'
     crawler = RestaurantScraper(url,webdriver.Chrome(ChromeDriverManager().install()))
     menu_num_sections, menu_section_child_elements = crawler.fetch_menu_sections()
     for i,element in enumerate(menu_section_child_elements):
